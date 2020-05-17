@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+	<title>Denúncia</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="formulario.css">
+</head>
+<body id="denuncia">
+	<h1>Denúncie aqui os locais no qual você viu algum foco:</h1>
+
+	<div id="formulario">
+		<form name="cadastro" action="#" method="post" onsubmit="return validacao()">
+			<p><label class="tit">Nome</label></p>
+			<p><input type="text" name="nome" id="nome" placeholder="Nome" value="Informe seu Nome"></p>
+			<p><label class="tit">Número de Telefone ou Celular</label></p>
+			<p><input type="text" name="numero" id="numero" placeholder="Numero" value="Informe seu Número"></p>
+			<p><label class="tit">CPF</label></p>
+			<p><input type="text" name="cpf" id="cpf" placeholder="CPF" value="Informe seu CPF"></p>
+			<p><label class="tit">Cidade</label></p>
+			<p><input type="text" name="cidade" id="cidade" placeholder="Cidade" value="Informe sua Cidade"></p>
+			<p><label class="tit">Bairro</label></p>
+			<p><input type="text" name="bairro" id="bairro" placeholder="Bairro" value="Informe seu Bairro"></p>
+			<p><label class="tit">Número do Bairro</label></p>
+			<p><input type="text" name="num1" id="num1" placeholder="Numero1" value="Informe o Número"></p>
+			<p><label class="tit">Sexo</label></p>
+			<p><input type="radio" name="sexo" id="sexom" value="masculino" checked="checked">Masculino</p>
+			<p><input type="radio" name="sexo" id="sexof" value="feminino">Feminino</p>
+			<p><label class="tit">Denúncia</label></p>
+			<p><textarea name="txarea" id="txarea" rows="10" cols="50"></textarea></p>
+			<p><input type="submit" name="enviar"  id="enviar" value="Enviar"></p>
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		function validacao() {
+			var formulario = document.forms["cadastro"]
+			var nome = formulario.nome.value
+			var numero = formulario.numero.value
+			var cpf = formulario.cpf.value
+			var cidade = formulario.cidade.value
+			var bairro = formulario.bairro.value
+			var num1 = formulario.num1.value
+			var txarea = formulario.txarea.value
+			var sexo = formulario.sexo.value
+			
+			var erro = false
+
+			if (nome.indexOf(" ") == -1) {
+				alert("Preencha o nome completo")
+				erro = true
+			}
+			if (numero.length != 11) {
+				alert("Preencha o Número corretamente")
+					erro= true
+			}
+			if (cpf.length != 11) {
+				alert("Preencha o CPF corretamente")
+					erro= true
+			}
+			if (cidade.indexOf(" ") ==-1) {
+				alert("Digite pelo menos 10 caracteres")
+				erro = true
+			}
+			if (bairro.indexOf(" ") ==-1) {
+				alert("Digite pelo menos 8 caracteres")
+				erro = true
+			}
+			if (txarea.length < 15) {
+				alert("Digite pelo menos 15 caracteres")
+				erro = true
+			}
+
+			if (erro) {
+				return false
+			}else {
+				return true
+			}
+		}
+	</script>
+
+</body>
+</html>

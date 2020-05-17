@@ -1,0 +1,84 @@
+h1 {
+	text-align: center;
+}
+
+#denuncia {
+	background-color: white;
+}
+
+#formulario {
+	background-color: #666;
+	border-radius: 5px;
+}
+
+#enviar {
+	font-size: 30px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#txarea {
+	font-size: 30px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.tit {
+	font-size: 30px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#nome {
+	font-size: 30px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#numero {
+	font-size: 30px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#cpf {
+	font-size: 30px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#cidade {
+	font-size: 30px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#bairro {
+	font-size: 30px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#num1{
+	font-size: 30px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#sexom {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#sexof {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}

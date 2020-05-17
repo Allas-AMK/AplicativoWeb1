@@ -1,0 +1,34 @@
+body {
+	margin: 0;
+	padding: 0px;
+	background-image: url(img/fundo.jpg);
+}
+
+form {
+	font-size: 16px;
+	background: #61605f;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 20px 20px 20px;
+	border-radius: 10px;
+}
+
+input, textarea{
+	width: 470px;
+	padding: 10px;
+}
+
+.enviar input {
+	background: #969595;
+	height: 40px;
+	width: 150px;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 1px solid;
+	cursor: pointer;
+}
+
+.enviar input:hover{
+	background: #ff1200;
+}
+
